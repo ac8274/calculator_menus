@@ -18,6 +18,7 @@ import android.widget.TextView;
 public class MainActivity2 extends AppCompatActivity implements AdapterView.OnItemClickListener, View.OnCreateContextMenuListener {
     Intent gi;
     Button returner;
+    TextView text3;
     TextView AN;
     ListView lv;
     Double[] B = new Double[20];
@@ -33,6 +34,7 @@ public class MainActivity2 extends AppCompatActivity implements AdapterView.OnIt
         returner = findViewById(R.id.button2);
         lv = findViewById(R.id.An);
         AN = findViewById(R.id.txt);
+        text3 = findViewById(R.id.textView3);
         gi = getIntent();
         B = list_veiw_filler();
         ArrayAdapter<Double> adp = new ArrayAdapter<Double>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, B);
