@@ -67,6 +67,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static boolean check_valid_value(String num){
+        if(num.length() == 2 && num.charAt(0) == '-' && num.charAt(1) == '.')
+        {
+            return false;
+        }
+        else if(num.length() == 1)
+        {
+            if(num.charAt(0)=='-' || num.charAt(0)=='.')
+            {
+                return false;
+            }
+        }
         return !num.isEmpty();
     }
 
