@@ -67,15 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static boolean check_valid_value(String num){
-        /* function gets a string and checks if it could be turned into a double.*/
-        try{
-            double f = strToDouble(num);
-            return true;
-        }
-        catch (Exception e) // if exception rises then string can't be convereted.
-        {
-            return false;
-        }
+        return !num.isEmpty();
     }
 
     public static double strToDouble(String str)
